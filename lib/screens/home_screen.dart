@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_clone_app/screens/chat_screen.dart';
 import 'package:telegram_clone_app/screens/contact_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,13 +16,20 @@ class HomeScreen extends StatelessWidget {
       drawer: const TelegramDrawer(),
       body: ListView(
         children: [
-          ListTile(
-              leading: CircleAvatar(
-                backgroundImage: NetworkImage(
-                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
-              ),
-              title: Text('Sweet Home'),
-              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
+                return ChatScreen();
+              }));
+            },
+            child: ListTile(
+                leading: CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+                ),
+                title: Text('Sweet Home'),
+                subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ),
           ListTile(
               leading: CircleAvatar(
                 backgroundImage: NetworkImage(

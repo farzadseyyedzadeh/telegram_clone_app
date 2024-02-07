@@ -7,7 +7,36 @@ class ContactScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (context) {
+              return Column(
+                children: [
+                  Text('New Contact'),
+                  Form(
+                      child: Column(
+                    children: [
+                      TextFormField(
+                        decoration:
+                            InputDecoration(labelText: 'First Name (required)'),
+                      ),
+                      TextFormField(
+                        decoration:
+                            InputDecoration(labelText: 'Last Name (optional)'),
+                      ),
+                      TextFormField(
+                        decoration: InputDecoration(labelText: 'phone number'),
+                      ),
+                      ElevatedButton(
+                          onPressed: () {}, child: Text('Create Contact'))
+                    ],
+                  ))
+                ],
+              );
+            },
+          );
+        },
         child: const Icon(Icons.person_add_alt_1),
       ),
       appBar: AppBar(

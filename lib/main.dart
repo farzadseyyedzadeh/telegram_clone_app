@@ -15,7 +15,7 @@ class TelegramApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const ChatScreen(),
+      home: const HomeScreen(),
     );
   }
 }
