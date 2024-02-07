@@ -11,7 +11,11 @@ class ContactScreen extends StatelessWidget {
         child: const Icon(Icons.person_add_alt_1),
       ),
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back),
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+            child: const Icon(Icons.arrow_back)),
         actions: const [
           Icon(Icons.search),
           SizedBox(
