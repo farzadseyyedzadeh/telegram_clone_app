@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:telegram_clone_app/screens/chat_screen.dart';
 import 'package:telegram_clone_app/screens/contact_screen.dart';
 import 'package:telegram_clone_app/screens/home_screen.dart';
 
@@ -14,7 +15,7 @@ class TelegramApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(useMaterial3: false),
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: const ChatScreen(),
     );
   }
 }
