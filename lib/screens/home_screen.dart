@@ -12,6 +12,94 @@ class HomeScreen extends StatelessWidget {
         title: const Text('connecting...'),
       ),
       drawer: const TelegramDrawer(),
+      body: ListView(
+        children: [
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+          ListTile(
+              leading: CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://hbr.org/resources/images/article_assets/2016/11/nov16-17-499178960.jpg'),
+              ),
+              title: Text('Sweet Home'),
+              subtitle: Text('ashraf marvi : برنامه مهمترین دیدارهای هفته')),
+        ],
+      ),
     );
   }
 }
@@ -45,7 +133,7 @@ class TelegramDrawer extends StatelessWidget {
           width: double.infinity,
           height: 170,
           color: Colors.blue,
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -82,7 +170,7 @@ class TelegramDrawer extends StatelessWidget {
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 15, top: 20),
+          padding: const EdgeInsets.only(left: 15, top: 20),
           child: const Column(
             children: [
               Row(
